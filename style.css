@@ -1,0 +1,365 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* box-sizing: border-box;でmargin,paddingを入れてもwidth,heightから余白がはみでない */
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body,
+i {
+  font-size: 16px;
+  font-style: normal;
+  color: #333;
+}
+
+.title,
+.logo {
+  font-size: 1.7em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text {
+  font-size: 1em;
+  text-align: center;
+}
+
+.item-title {
+  font-weight: bold;
+}
+
+.content,
+.about-content,
+.header-inner,
+.main-inner {
+  width: 80vw;
+}
+
+.main-visual,
+#section-1,
+#section-2,
+#section-3,
+#section-4,
+#section-5,
+#section-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-1 {
+  min-height: 80vh;
+}
+
+#section-2 {
+  min-height: 30vh;
+}
+
+.main-visual,
+#section-3,
+#section-5,
+#section-6 {
+  min-height: 50vh;
+}
+
+#section-4 {
+  min-height: 100vh;
+}
+
+header,
+.main-visual,
+#section-3,
+#section-5 {
+  background-color: rgb(233, 251, 254);
+}
+
+.button {
+  display: block;
+  width: 200px;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgb(157, 182, 187);
+  border-radius: 50px;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: rgb(137, 158, 162);
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: center;
+  min-height: 7vh;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1vw;
+}
+
+nav ul li {
+  min-width: 5vw;
+  text-align: center;
+}
+
+nav ul li:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*main-visial*/
+.main-inner {
+  display: flex;
+  align-items: center;
+  gap: 20vw;
+}
+
+.main-inner-text {
+  width: 40vw;
+}
+
+.main-inner-text .button {
+  margin: 30px 0 0;
+}
+
+.main-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.main-img {
+  font-size: 10em;
+}
+
+/*section-1*/
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vw;
+  margin-top: 6vw;
+}
+
+.service {
+  text-align: center;
+}
+
+.service-title {
+  font-size: 1.2em;
+  padding: 1.8vw 0 1.2vw;
+  font-weight: bold;
+}
+
+/*section-2*/
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20vh;
+}
+
+.about-content .title {
+  text-align: left;
+}
+
+.about-text {
+  margin-top: 2vw;
+}
+
+.about-img {
+  display: flex;
+}
+
+.people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13vw;
+  height: 20vh;
+  font-size: 5em;
+  color: rgb(137, 158, 162);
+  background-color: rgb(233, 251, 254);
+}
+
+.people:nth-child(2) {
+  background-color: #fff;
+}
+
+/*section-3*/
+.play {
+  display: block;
+  text-align: center;
+  font-size: 4em;
+  padding-top: 5vw;
+}
+
+/*section-4*/
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vw;
+  margin-top: 4vw;
+}
+
+.item {
+  margin-top: 5vw;
+  text-align: center;
+}
+
+.item-title {
+  font-size: 1.2em;
+  padding: 1.5vw;
+}
+
+.item-text {
+  width: 25vw;
+  margin: auto;
+}
+
+.icon {
+  font-size: 3.5em;
+  color: rgb(157, 182, 187);
+}
+
+/*seciton-5*/
+.section-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-logo {
+  font-size: 1.2em;
+  padding-right: 1vw;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin: 0.8vw 0;
+  text-align: center;
+}
+
+/*section-6*/
+.content .button {
+  margin: 20px auto 0;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+
+  .content,
+  .about-content,
+  .header-inner,
+  .main-inner {
+    width: 90vw;
+  }
+
+  .title,
+  h2 {
+    margin: auto;
+    font-size: 1.4em;
+  }
+
+  .button {
+    padding: 10px;
+    width: 165px;
+  }
+}
+
+@media (max-width: 427px) {
+  body {
+    font-size: 11px;
+  }
+
+  h2 {
+    margin: 10px auto;
+  }
+
+  .text {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  .main-visual,
+  #section-1 {
+    min-height: 50vh;
+  }
+
+  .main-title {
+    font-size: 1.5em;
+  }
+
+  .main-inner {
+    gap: 15vw;
+  }
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-content .title,
+  .about-content .about-subtitle,
+  .about-content .about-text {
+    text-align: center;
+  }
+
+  .about-img {
+    justify-content: center;
+    margin-top: 5vw;
+  }
+
+  .about-content {
+    display: block;
+    margin: 10vw 0;
+  }
+
+  .people {
+    height: 15vh;
+    font-size: 4em;
+  }
+
+  #section-3,
+  #section-5,
+  #section-6 {
+    min-height: 30vh;
+  }
+
+  #section-4 {
+    min-height: 120vh;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  .item-text {
+    width: 75vw;
+  }
+}
