@@ -58,7 +58,6 @@ i {
   align-items: center;
 }
 
-.main-visual,
 #section-1 {
   min-height: 80vh;
 }
@@ -67,6 +66,7 @@ i {
   min-height: 30vh;
 }
 
+.main-visual,
 #section-3,
 #section-5,
 #section-6 {
@@ -309,7 +309,11 @@ h2 {
 
   .main-visual,
   #section-1 {
-    min-height: 60vh;
+    min-height: 50vh;
+  }
+
+  nav {
+    display: none;
   }
 
   .main-title {
@@ -352,7 +356,7 @@ h2 {
   }
 
   #section-4 {
-    min-height: 130vh;
+    min-height: 120vh;
   }
 
   .items {
